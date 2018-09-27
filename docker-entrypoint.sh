@@ -38,5 +38,6 @@ gunicorn 'CTFd:create_app()' \
     --bind '0.0.0.0:8000' \
     --workers $WORKERS \
     --worker-class 'gevent' \
+    --reload \
     --access-logfile "${LOG_FOLDER:-/opt/CTFd/CTFd/logs}/access.log" \
     --error-logfile "${LOG_FOLDER:-/opt/CTFd/CTFd/logs}/error.log"

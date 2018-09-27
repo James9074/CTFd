@@ -16,7 +16,7 @@ services:
     volumes:
       - /data/ctf/CTFd/logs:/var/log/CTFd
       - /data/ctf/CTFd/uploads:/var/uploads
-      # - .:/opt/CTFd:ro
+      - .:/opt/CTFd
     depends_on:
       - db
   db:
