@@ -437,6 +437,17 @@ table{
     }
 }
 
+@media only screen and (max-width: 385px){
+  .navbar-brand{
+    line-height: 40px !important;
+    margin-top: -70px;
+  }
+
+  .navbar-header{
+    padding-bottom: 20px !important;
+  }
+}
+
 .btn {
     letter-spacing: 1px;
     text-decoration: none;
@@ -857,6 +868,7 @@ h4.text-center {
   width: 800px;
 }
 
+}
 
 
 
