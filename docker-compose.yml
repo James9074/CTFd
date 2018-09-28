@@ -1,7 +1,7 @@
 version: '2'
 services:
   ctfd:
-    image: james9074/ctfd
+    image: james9074/ctfd:1.0.3
     build: .
     restart: always
     ports:
@@ -16,7 +16,7 @@ services:
     volumes:
       - /data/ctf/CTFd/logs:/var/log/CTFd
       - /data/ctf/CTFd/uploads:/var/uploads
-      - .:/opt/CTFd
+      - .:/opt/CTFd:ro
     depends_on:
       - db
   db:

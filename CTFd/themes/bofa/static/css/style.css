@@ -8,7 +8,12 @@ html, body, .container {
 
 body {
   background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+  background: repeating-linear-gradient(to bottom, #092a11, #0a1e0a 2px, #0e2918 2px, #0f290e 4px);
   color: #ccc;
+}
+
+.chal-desc pre{
+  word-break: keep-all !important;
 }
 
 @keyframes flicker {
@@ -93,8 +98,8 @@ body {
   }
   9% {
     transform: scale(1.3, 0.6) translate3d(0, 100%, 0);
-    -webkit-filter: brightness(30);
-    filter: brightness(30);
+    -webkit-filter: brightness(0);
+    filter: brightness(0);
     opacity: 0;
   }
   11% {
@@ -148,7 +153,7 @@ body {
 }
 
 #tube {
-    background-color: #121010;
+    /*background-color: #121010;*/
     width: 100%;
     height: 110%;
     margin-top:10px;
@@ -196,7 +201,7 @@ body {
 
 
 #tube-background {
-    background-color: #121010;
+    /*background-color: #121010;*/
     width: 100%;
     height: 110%;
     position: relative;
@@ -272,7 +277,8 @@ h1, h2 {
     font-family: 'Press Start 2P', cursive;
     font-weight: 500;
     letter-spacing: 2px;
-    -webkit-text-stroke: 1px blue;
+    /*-webkit-text-stroke: 1px blue;*/
+    -webkit-text-stroke: 1px #13e3414d;
 }
 
 td {
@@ -364,7 +370,8 @@ a {
 }
 
 #challenge > h3, h4, p {
-  color: #555;
+  /*color: #555;*/
+  color: #b0b0b0
 }
 
 #solves tr:nth-child(odd) td a, button {
@@ -504,13 +511,14 @@ button .trigger .solved-challenges{
 }
 
 .navbar-inverse {
-    background: none repeat scroll 0% 0% #000000;
+    /*background: none repeat scroll 0% 0% #000000;*/
+    background: none repeat scroll 0% 0% #00420f;
     border: medium none;
     margin-bottom: 0px;
 }
 
 .jumbotron {
-    background-color: #000000;
+    background-color: #00350c;
     color: #FFF;
     padding: 0px 0px 25px;
 }
@@ -598,6 +606,15 @@ button .trigger .solved-challenges{
     user-select: none;
     margin: 0 0 0 0 !important;
 }
+
+.footer a {
+  color: #74716d;
+}
+
+.footer a:focus, a:hover {
+  color: #9f4e4e;
+}
+
 
 .label-content {
     position: relative;
@@ -792,37 +809,43 @@ svg.main-svg .legend .bg{
 
 
 h4.text-center {
-  animation: blink 2s steps(4, start) infinite;
+  animation: blink 5s steps(10, start) infinite;
 }
 @-moz-keyframes blink {
   to {
-    visibility: hidden;
+    opacity: .75;
+    /*visibility: hidden;*/
   }
 }
 @-webkit-keyframes blink {
   to {
-    visibility: hidden;
+    opacity: .75;
+    /*visibility: hidden;*/
   }
 }
 @-o-keyframes blink {
   to {
-    visibility: hidden;
+    opacity: .75;
+    /*visibility: hidden;*/
   }
 }
 @keyframes blink {
   to {
-    visibility: hidden;
+    opacity: .75;
+    /*visibility: hidden;*/
   }
 }
 
 /* -- Logo -- */
 
-.defcon-logo {
+.bofa-logo {
   width: 50%;
   height: auto;
   margin: auto 0;
   text-align: center;
 }
+
+
 
 
 
@@ -833,8 +856,6 @@ h4.text-center {
 .modal-dialog {
   width: 800px;
 }
-
-
 
 
 

@@ -156,9 +156,9 @@ def register():
         if not valid_email:
             errors.append("Please enter a valid email address")
         if names:
-            errors.append('That team name is already taken')
+            errors.append('That name is already taken')
         if team_name_email_check is True:
-            errors.append('Your team name cannot be an email address')
+            errors.append('Your name cannot be an email address')
         if emails:
             errors.append('That email has already been used')
         if pass_short:

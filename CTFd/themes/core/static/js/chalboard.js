@@ -29,7 +29,7 @@ function updateChalWindow(obj) {
                 var template = nunjucks.compile(template_data);
 
                 var solves = obj.solves == 1 ? " Solve" : " Solves";
-                var solves = obj.solves + solves;
+                solves = obj.solves + solves;
 
                 var nonce = $('#nonce').val();
 
@@ -172,6 +172,20 @@ function marksolves(cb) {
         var solves = $.parseJSON(JSON.stringify(data));
         for (var i = solves['solves'].length - 1; i >= 0; i--) {
             var id = solves['solves'][i].chalid;
+            $('button[value="' + id + '"]').removeClass('theme-background');
+            $('button[value="' + id + '"]').addClass('solved-challenge');
+        };
+        if (cb) {
+            cb();
+        }
+    });
+}
+
+function marksolvesold(cb) {
+    $.get(script_root + '/solves', function (data) {
+        var solves = $.parseJSON(JSON.stringify(data));
+        for (var i = solves['solves'].length - 1; i >= 0; i--) {
+            var id = solves['solves'][i].chalid;
             var btn = $('button[value="' + id + '"]');
             btn.addClass('solved-challenge');
             btn.prepend("<i class='fas fa-check corner-button-check'></i>")
@@ -224,7 +238,7 @@ function updatesolves(cb){
 function getsolves(id){
   $.get(script_root + '/chal/'+id+'/solves', function (data) {
     var teams = data['teams'];
-    $('.chal-solves').text((parseInt(teams.length) + " Solves"));
+    //$('.chal-solves').text((parseInt(teams.length) + " Solves"));
     var box = $('#chal-solves-names');
     box.empty();
     for (var i = 0; i < teams.length; i++) {
@@ -240,7 +254,7 @@ function loadchals(cb) {
     $.get(script_root + "/chals", function (data) {
         var categories = [];
         challenges = $.parseJSON(JSON.stringify(data));
-
+        console.log(data)
         $('#challenges-board').empty();
 
         for (var i = challenges['game'].length - 1; i >= 0; i--) {

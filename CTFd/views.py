@@ -242,7 +242,7 @@ def profile():
             if not valid_email:
                 errors.append("That email doesn't look right")
             if not utils.get_config('prevent_name_change') and names and name != session['username']:
-                errors.append('That team name is already taken')
+                errors.append('That name is already taken')
             if emails and emails.id != session['id']:
                 errors.append('That email has already been used')
             if not utils.get_config('prevent_name_change') and name_len:
