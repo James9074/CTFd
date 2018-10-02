@@ -81,7 +81,6 @@ def run_upgrade():
     migrate_upgrade()
     utils.set_config('ctf_version', __version__)
 
-
 def create_app(config='CTFd.config.Config'):
     app = CTFdFlask(__name__)
     with app.app_context():

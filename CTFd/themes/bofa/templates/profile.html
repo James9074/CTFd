@@ -57,11 +57,21 @@
                         <span class="input">
                             <input class="input-field" type="text" name="name" id="name-input" value="{{name}}"/>
                             <label class="input-label" for="name-input">
-                                <span class="label-content" data-content="Team Name">Your Name</span>
+                                <span class="label-content" data-content="Team Name">Username</span>
                             </label>
                         </span>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="input">
+                            <input class="input-field" type="text" name="affiliation" id="affiliation-input" value="{% if affiliation %}{{affiliation}}{% endif %}" />
+                            <label class="input-label" for="affiliation-input">
+                                <span class="label-content" data-content="Affiliation">Full Name</span>
+                            </label>
+                        </span>
+                    </div>
+                </div>                
                 <div class="row">
                     <div class="col-md-12">
                         <span class="input">
@@ -93,16 +103,6 @@
                     </div>
                 </div>
                 <hr />
-                <div class="row">
-                    <div class="col-md-12">
-                        <span class="input">
-                            <input class="input-field" type="text" name="affiliation" id="affiliation-input" value="{% if affiliation %}{{affiliation}}{% endif %}" />
-                            <label class="input-label" for="affiliation-input">
-                                <span class="label-content" data-content="Affiliation">Affiliation</span>
-                            </label>
-                        </span>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <span class="input">

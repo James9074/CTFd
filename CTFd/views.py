@@ -12,7 +12,6 @@ from CTFd import utils
 
 views = Blueprint('views', __name__)
 
-
 @views.route('/setup', methods=['GET', 'POST'])
 def setup():
     # with app.app_context():
@@ -107,7 +106,6 @@ def setup():
 @views.route('/static/user.css')
 def custom_css():
     return Response(utils.get_config('css'), mimetype='text/css')
-
 
 # Static HTML files
 @views.route("/", defaults={'template': 'index'})

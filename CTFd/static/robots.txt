@@ -1,0 +1,6 @@
+Disallow: /nicetry/
+Disallow: /tryharder/
+Disallow: /ilovegoats/
+Disallow: /Bahhhhhhhh/
+
+#Flag: TheRobotsWillNeverFindThis

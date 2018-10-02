@@ -142,6 +142,7 @@ def register():
     if request.method == 'POST':
         errors = []
         name = request.form['name']
+        fullname = request.form['fullname']
         email = request.form['email']
         password = request.form['password']
 
@@ -172,7 +173,7 @@ def register():
             return render_template('register.html', errors=errors, name=request.form['name'], email=request.form['email'], password=request.form['password'])
         else:
             with app.app_context():
-                team = Teams(name, email.lower(), password)
+                team = Teams(name, fullname, email.lower(), password)
                 db.session.add(team)
                 db.session.commit()
                 db.session.flush()
