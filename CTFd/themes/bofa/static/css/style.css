@@ -462,15 +462,11 @@ a {
 }
 
 .modal-content {
-  border-radius: 0px;
-  border-color: black;
-  border-width: 2px;
-  box-shadow: 0 0 0 5px hsl(0, 0%, 80%), 0 0 0 7px hsl(0, 0%, 100%);
+  border: none;
 }
 
 #challenge > h3, h4, p {
-  /*color: #555;*/
-  color: #b0b0b0
+  color: #3c3c3c
 }
 
 #solves tr:nth-child(odd) td a, button {
@@ -606,8 +602,8 @@ button .trigger .solved-challenges{
 
 .btn-outlined.btn-theme {
     background: none;
-    color: #000000;
-    border-color: #000000;
+    color: #3e3e3e;
+    border-color: #4e4e4e;
     background-image: none;
     background-color: #fff;
     border: 3px solid;
@@ -616,8 +612,8 @@ button .trigger .solved-challenges{
 .btn-outlined.btn-theme:hover,
 .btn-outlined.btn-theme:active {
     color: #FFF;
-    background: #000000;
-    border-color: #000000;
+    background: #1d1d1d;
+    border-color: #1d1d1d;
 }
 
 .navbar-inverse {
@@ -681,7 +677,7 @@ button .trigger .solved-challenges{
     padding: 0.8em;
     width: 60%;
     /*border: none;*/
-    border: solid 2px #000;
+    border: solid 2px #b5b5b5;
     border-radius: 0;
     background: #f0f0f0;
     color: #aaa;
@@ -690,12 +686,11 @@ button .trigger .solved-challenges{
     -webkit-appearance: none; /* for box shadows to show on iOS */
     margin-bottom: 30px;
     margin-top: 5px;
-    box-shadow: 4px 4px 0px #888888 inset;
-    box-shadow: 4px 4px 0px #888888;
+    box-shadow: 2px 2px 10px #888888;
 }
 
 .input-field:focus {
-    outline: none;
+    /*outline: none;*/
 }
 
 .input-label {
@@ -786,8 +781,7 @@ button .trigger .solved-challenges{
 
 .input-field:focus + .input-field,
 .input--filled .input-field {
-    background-color: #fff;
-    border-color: blue;
+    border-color: rgb(202, 202, 202);
 }
 
 .input--hide {
@@ -916,7 +910,14 @@ h4.text-center {
   text-align: center;
 }
 
+.main-header {
+  font-size: 70px;
+  color: #e21737;
+}
 
+.bofa-blue{
+  color: #07246c;
+}
 
 
 

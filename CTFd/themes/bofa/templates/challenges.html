@@ -20,12 +20,12 @@
 
     .close-text {color: #ccc;position: relative;top: -25px;right: -15px;cursor: pointer;}
     .chal-desc {padding-left: 30px; padding-right: 30px;}
-    .key-submit {padding-top: 14px; padding-right: 10px;}
+    .key-submit {padding-top: 19px; padding-right: 10px;}
     .notification-row {padding-left: 10px;padding-right: 10px;}
     .input {padding-right: 5px;}
     .input-field:focus + .input-field,
     .input--filled .input-field {
-        border-color: rgb(238, 238, 238);
+        border: solid 2px #b5b5b5;
     }
     .input-field:focus + .input-field,
     .input--filled .correct {
@@ -76,6 +76,13 @@
         background: #0052c2;
         color: #fff;
         border: none;
+        box-shadow: #c3c3c3 2px 2px 5px 1px;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    button.trigger:hover {
+        box-shadow: #888888 2px 2px 5px 1px;
+        transition: box-shadow 0.3s ease-in-out;
     }
 
     button.trigger.solved-challenge {
