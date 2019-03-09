@@ -685,6 +685,7 @@ def forgot_password(email, team_name):
 """.format(url_for('auth.reset_password', _external=True), base64encode(token))
 
     sendmail(email, text)
+    return text
 
 
 def rmdir(dir):

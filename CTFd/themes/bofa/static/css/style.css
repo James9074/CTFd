@@ -1,15 +1,109 @@
 
+
+
+@font-face {
+  font-family: "cnx-regular";
+  src: url("/themes/bofa/static/fonts/cnx/cnx-regular.eot");
+  src: url("/themes/bofa/static/fonts/cnx/cnx-regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-regular-cond";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-regular-cond/cnx-regular-cond.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-regular-cond/cnx-regular-cond.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-regular-cond/cnx-regular-cond.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-regular-cond/cnx-regular-cond.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-regular-cond/cnx-regular-cond.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-bold";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold/cnx-bold.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold/cnx-bold.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold/cnx-bold.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold/cnx-bold.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold/cnx-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-bold-italic";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold-italic/cnx-bold-italic.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold-italic/cnx-bold-italic.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold-italic/cnx-bold-italic.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold-italic/cnx-bold-italic.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-bold-italic/cnx-bold-italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-italic";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic/cnx-italic.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic/cnx-italic.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic/cnx-italic.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic/cnx-italic.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic/cnx-italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-italic-cond";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic-cond/cnx-italic-cond.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic-cond/cnx-italic-cond.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic-cond/cnx-italic-cond.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic-cond/cnx-italic-cond.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-italic-cond/cnx-italic-cond.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-medium";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium/cnx-medium.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium/cnx-medium.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium/cnx-medium.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium/cnx-medium.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium/cnx-medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-medium-italic";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium-italic/cnx-medium-italic.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium-italic/cnx-medium-italic.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium-italic/cnx-medium-italic.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium-italic/cnx-medium-italic.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-medium-italic/cnx-medium-italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-light";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light/cnx-light.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light/cnx-light.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light/cnx-light.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light/cnx-light.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light/cnx-light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-variant: normal
+}
+
+@font-face {
+  font-family: "cnx-light-italic";
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light-italic/cnx-light-italic.eot");
+  src: url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light-italic/cnx-light-italic.eot?#iefix") format("embedded-opentype"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light-italic/cnx-light-italic.woff2") format("woff2"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light-italic/cnx-light-italic.woff") format("woff"),url("https://www1.bac-assets.com/homepage/spa-assets/components/utilities/global/sparta-style-utility/3.1.4/font/cnx-light-italic/cnx-light-italic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-variant: normal
+}
+
+
 html, body, .container {
     height: 100% !important;
   /*  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: #111111; */
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'cnx-regular';
 }
 
 body {
-  background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
-  background: repeating-linear-gradient(to bottom, #092a11, #0a1e0a 2px, #0e2918 2px, #0f290e 4px);
-  color: #ccc;
+  /*background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+  background: repeating-linear-gradient(to bottom, #092a11, #0a1e0a 2px, #0e2918 2px, #0f290e 4px);*/
+  background-color:white;
+  color: #524940;
 }
 
 .chal-desc pre{
@@ -274,11 +368,11 @@ h1, h2 {
     /*font-family: 'Lato', sans-serif;
     font-family: "Times New Roman", Georgia, Serif !important;
     font-family: 'silkscreenbold';*/
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'cnx-regular';
     font-weight: 500;
     letter-spacing: 2px;
     /*-webkit-text-stroke: 1px blue;*/
-    -webkit-text-stroke: 1px #13e3414d;
+    
 }
 
 td {
@@ -287,7 +381,7 @@ td {
 
 a {
     outline: 0;
-    color: #37d6d6;
+    color: #DC1431;
 }
 
 .body-container {
@@ -313,11 +407,16 @@ a {
     font-size: 24px;
     letter-spacing: -0.04rem;
     line-height: 15px;
-    color: #FFF;
+    color:black !important;
+    background-image: url(/themes/bofa/static/img/BoA-logo-new.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    min-width: 250px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #FFF !important;
+    color: black !important;
 }
 
 .navbar li > a {
@@ -481,16 +580,16 @@ table{
 }
 
 .theme-background {
-    background-color: #000000 !important;
+    background-color: grey !important;
 
 }
 
 .solved-challenge {
-    background-color: #8EDC9D !important;
+    background-color: #0073cf !important;
 }
 
 button .trigger .solved-challenges{
-  color: #555;
+  color: white;
 }
 
 .panel-theme {
@@ -523,14 +622,14 @@ button .trigger .solved-challenges{
 
 .navbar-inverse {
     /*background: none repeat scroll 0% 0% #000000;*/
-    background: none repeat scroll 0% 0% #00420f;
+    background: none repeat scroll 0% 0% #FFFFFF;
     border: medium none;
     margin-bottom: 0px;
 }
 
 .jumbotron {
-    background-color: #00350c;
-    color: #FFF;
+    background-color: #f9f9f9;
+    color: #DC1431;
     padding: 0px 0px 25px;
 }
 
@@ -714,7 +813,9 @@ button .trigger .solved-challenges{
 }
 
 
-button.hexagon {
+button.hexagon-old {
+
+  
   /* #1 */
   border: 5px solid hsl(0, 0%, 40%);
 
@@ -729,48 +830,7 @@ button.hexagon {
   box-shadow:
       0 0 0 10px hsl(0, 0%, 80%),
       0 0 0 15px hsl(0, 0%, 90%);
-
-
-  /* If you could do pseudo elements
-     you could get a few more... */
-
-  /* Also, HSL is awesome but don't use it if
-     you need super old browser support */
 }
-
-/* -- START hexagon --
-
-.hexagon {
-  position: relative;
-  width: 300px;
-  height: 173.21px;
-  background-color: #64C7CC;
-  margin: 86.60px 0;
-
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 86.60px solid #64C7CC;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 86.60px solid #64C7CC;
-}
-
-/*  -- END hexagon -- */
-
 
 svg.main-svg {
   background: none !important;
